@@ -4,11 +4,11 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
-        source: "/projects/:username",
+        source: "/projects/:username/landing",
         destination: "/",
       },
       {
-        source: "/projects/:username/:path*",
+        source: "/projects/:username/landing/:path*",
         destination: "/:path*",
       },
     ];
