@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div><i>Home Page Boss</i></div>
+    <div><i>Home Page Boss V2 Ultima</i></div>
   )
 }
 
