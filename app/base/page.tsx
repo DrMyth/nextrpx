@@ -2,7 +2,7 @@ import React from 'react'
 
 const BasePageBoss = () => {
   return (
-    <div><b>BasePageBoss</b></div>
+    <div><b>BasePageBoss V2 Ultima</b></div>
   )
 }
 
