@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
         destination: "/:path*",
       },
       {
-        source: "/projects/:username/landing",
+        source: "/projects/:username/landing/",
         destination: "/",
       },
     ];
