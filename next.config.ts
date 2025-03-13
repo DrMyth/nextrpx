@@ -1,23 +1,23 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  basePath: "/projects/:username/landing", // 👈 Fixes static file path issue
   async rewrites() {
     return [
-      // 1️⃣ Serve Next.js assets correctly first
+      // 1️⃣ Fix `_next/static` asset paths  
       {
         source: "/projects/:username/landing/_next/:path*",
-        destination: "/_next/:path*",
+        destination: "/_next/:path*", 
       },
-      // 2️⃣ Redirect "/projects/:username/landing/" to the home page
-      {
-        source: "/projects/:username/landing/",
-        destination: "/",
-      },
+      // 2️⃣ Fix landing page routing  
       {
         source: "/projects/:username/landing",
         destination: "/",
       },
-      // 3️⃣ Handle all other paths within landing
+      {
+        source: "/projects/:username/landing/",
+        destination: "/",
+      },
       {
         source: "/projects/:username/landing/:path*",
         destination: "/:path*",
