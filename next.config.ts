@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: "/projects/:username/landing", // 👈 Fixes static file path issue
+  //basePath: "/projects/:username/landing", // 👈 Fixes static file path issue
   async rewrites() {
     return [
       // 1️⃣ Fix `_next/static` asset paths  
