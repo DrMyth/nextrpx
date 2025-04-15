@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 
-const page = () => {
+const HomePage = () => {
   useEffect(() => {
     console.log("API URL:", process.env.NEXT_PUBLIC_API_URL);
   }, []);
@@ -13,4 +13,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default HomePage;
